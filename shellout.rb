@@ -10,8 +10,8 @@ class Shellout < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JakubMajcher/shellout/releases/download/v0.1-beta/shellout_0.1-beta_darwin_amd64.tar.gz"
-      sha256 "cd5d5fc0594efd34d82160026151dab61d81c9585d35b19c7d7ee41f8b4422b1"
+      url "https://github.com/JakubMajcher/shellout/releases/download/0.1-beta/shellout_0.1-beta_darwin_amd64.tar.gz"
+      sha256 "c2e86e9ffbb7e42730e842a5e635e2bf8e540147955a1bcfffe7c6dfb1290c73"
 
       define_method(:install) do
         bin.install "shellout"
@@ -19,8 +19,8 @@ class Shellout < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JakubMajcher/shellout/releases/download/v0.1-beta/shellout_0.1-beta_darwin_arm64.tar.gz"
-      sha256 "3e9194a8bb5137b2cf4d9dee568d02419ee2b7e84bfa6932169d5365435b9054"
+      url "https://github.com/JakubMajcher/shellout/releases/download/0.1-beta/shellout_0.1-beta_darwin_arm64.tar.gz"
+      sha256 "f34455f160c8d6b2ba56d5463fad6f96ec15934702f0400e8a0359dd772b1006"
 
       define_method(:install) do
         bin.install "shellout"
@@ -31,16 +31,16 @@ class Shellout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JakubMajcher/shellout/releases/download/v0.1-beta/shellout_0.1-beta_linux_amd64.tar.gz"
-      sha256 "80e5852790d05bcb211e68e0512321d3dc890dc91e5657607b43c42bdf72c2eb"
+      url "https://github.com/JakubMajcher/shellout/releases/download/0.1-beta/shellout_0.1-beta_linux_amd64.tar.gz"
+      sha256 "aa7b05f4d3242b4b4b745c7baa3f10232a053ce8a7e23b96840f17be9fae87ca"
       define_method(:install) do
         bin.install "shellout"
         bin.install_symlink "shellout" => "sho"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JakubMajcher/shellout/releases/download/v0.1-beta/shellout_0.1-beta_linux_arm64.tar.gz"
-      sha256 "930acae23e03dc906ad808bef79ef66730bf1fdaa4e9c18c89a6189446bf401b"
+      url "https://github.com/JakubMajcher/shellout/releases/download/0.1-beta/shellout_0.1-beta_linux_arm64.tar.gz"
+      sha256 "a32120abd8ad2a9e12a77ac0517a1f67f7c65d827573237e9b8d77f657c53989"
       define_method(:install) do
         bin.install "shellout"
         bin.install_symlink "shellout" => "sho"
